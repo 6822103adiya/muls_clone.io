@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+.head {
+    background-color: rgb(87,160,211);
+    color: whitesmoke;
+    text-align: center;
+    
+    font-size: 25px;
+    margin: 15px;
+    padding: 15px;
+}
+.head2 {
+    background-color: rgb(87,160,211);
+    color: whitesmoke;
+    text-align: left;
+    font-size: 15px;
+    margin: 15px;
+    padding: 15px;
+}
+.link {
+    color: black;
+}
+.huree{
+    margin: 15px;
+    padding: 15px;
+}
+</style>
+<body>
+    <header class="head">
+        <b>HTML Симантик болон форм таагуудтай ажиллах жишээ</b>
+    </header>
+    <nav class="head2">
+        <div class="link">
+            <a href="http://muls.edu.mn" target="_blank"> НҮҮР ХУУДАС </a>
+            &nbsp; &nbsp; &nbsp;
+
+            <a href="https://muls.edu.mn/view.php?value=ZW5jb2RldXNlcmlkMQ==" target="_blank"> БИДНИЙ ТУХАЙ </a>
+            &nbsp; &nbsp; &nbsp;
+
+            <a href="https://muls.edu.mn/view.php?value=ZW5jb2RldXNlcmlkMw==" target="_blank"> СУРГАЛТ, ЦАХИМ ШИЛЖИЛТ </a>
+        </div>
+    </nav>
+    <div class="huree">
+    <form action="https://muls.edu.mn" target="_blank">
+        <h3> НЭВТРЭХ ХЭСЭГ</h3>
+        <label for="ovog">Овог:</label> <br>
+        <Input type="text" id="ovog" name="ovog" placeholder="Та овогоо бичнэ үү" value=""><br>
+        <label for="ner">Нэр:</label><br>
+        <Input type="text" id="ner" name="ner" placeholder="Та нэрээ бичнэ үү" value=""><br>
+        <textarea name="message" rows="15" cols="35"></textarea>
+        <br><br>
+        <input type="submit" value="Нэвтрэх товч">
+    </form> <br><br>
+    <form>
+        <p>Санал асуулга</p>
+        1. Та ямар спорт сонирхдог вэ <br>
+        <input type="checkbox" name="sport" value="hulbumbug"> Хөл бөмбөг <br>
+        <input type="checkbox" name="sport" value="sags"> Сагсан бөмбөг <br>
+        <input type="checkbox" name="sport" value="sags"> Гар бөмбөг <br>
+        <input type="checkbox" name="sport" value="sags"> Жудо бөх <br>
+        <input type="checkbox" name="sport" value="sags"> Чөлөөт бөх <br>
+        <input type="checkbox" name="sport" value="sags"> Үндэсний бөх <br>
+        <p>2. Та хэддүгээр ангийн оюутан вэ </p>
+        <input type="radio" name="angi" value="1"> 1-р анги <br>
+        <input type="radio" name="angi" value="1"> 2-р анги <br>
+        <input type="radio" name="angi" value="1"> 3-р анги <br>
+        <input type="radio" name="angi" value="1"> 4-р анги <br>
+    </form>
+
+    <h3>Сонголт хийх</h3>
+
+    <form action="https://muls.edu.mn/">
+        <label for="car"> Автомашин сонгох:</label>
+            <select id="car" name="car">
+                <option value="carina"> Carina</option>
+                <option value="carina"> Prius 10</option>
+                <option value="carina"> Prius 11</option>
+                <option value="carina"> Prius 20</option>
+                <option value="carina"> Prius 30</option>
+                <option value="carina"> Corolla</option>
+                <option value="carina"> Allion</option>
+                <option value="carina">Aqua</option>
+            </select>
+            <input type="submit" value="Энд дар">
+    </form>
+    <br><br>
+    <form action="#">
+        <input list="surguuli" name="surguuli">
+        <datalist id="surguuli">
+            <option value="ХААИС">
+            <option value="МУИС">
+            <option value="МУБИС">
+            <option value="ШУТИС">
+            <option value="АУИС">
+            <option value="СУИС">
+        </datalist>
+        <input type="submit" value="Сонголт хийх">
+    </form>
+
+    <br>
+    </div>
+    <footer class="head2">
+        <p style="text-align: center; color: whitesmoke;">&Copy; Зохиогчийн эрх хуулиар хамгаалагдсан баригдсан тохиолдолд хатуу арга хэмжээ авах болно....Hades</p>
+        <p style="text-align: center; color: whitesmoke;"> Холбоо барих утас: 77100077</p>
+    </footer>
+</body>
+</html>
